@@ -43,7 +43,7 @@ export default function App() {
 
         <section className='mb-4'>
           <p>
-            This is the footer in Adi's website made for BUILT consulting <br />
+            Contact us at <br />
             info@builtengineers.com.au
           </p>
         </section>
