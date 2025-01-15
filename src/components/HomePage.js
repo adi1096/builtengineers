@@ -1,15 +1,16 @@
 import React from 'react';
-import picture from '../homePagePic.JPG'
+import picture from '../homepage_2.jpeg'; // Make sure the path is correct
+import './HomePage.css';
 
 const HomePage = () => {
   return (
-    <div>
-      <header>
-        <h1>Built Engineers & Consultants</h1>
-      </header>
-      <img src={picture} alt='' height="500" width="1000" justify-content="center"/>
+    <div className="home-page">
+      <div className="text-overlay">
+        <h1 padding-left= "20px">Built Engineers &amp; Consultants: Building Your Future</h1>
+      </div>
+      <img src={picture} alt="Home Page Visual" />
     </div>
   );
-}
+};
 
 export default HomePage;
