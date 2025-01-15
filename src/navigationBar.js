@@ -1,36 +1,46 @@
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import {
+  CNavbar, CContainer, CNavbarBrand, CNavbarToggler, CCollapse, CNavbarNav, 
+  CNavItem, CNavLink,
+} from '@coreui/react';
 import styles from './navigationBar.css';
-import logo from './logo_3.png'
+import logo from './logo_3.png';
 
-const navigationBar = () => {
+const NavigationBar = () => {
+  const [visible, setVisible] = useState(false);
+
   return (
-    <Navbar bg="light" expand="lg" class='navbar navbar-default text-center'>
-      <Container className={styles.navbarContainer} >
-        <Navbar.Brand as={NavLink} to="/">
-          <img src={logo} alt='' height="50" width="100"/>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link as={NavLink} to="/" className={styles.navLink}>
-              Home
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/projects" className={styles.navLink}>
-              Projects
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/about" className={styles.navLink}>
-              About Us
-            </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact" className={styles.navLink}>
-              Contact Us
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <>
+      <CNavbar expand="lg" className={`${styles.navbar} custom-navbar`}>
+        <CContainer fluid className="custom-container">
+          <CNavbarBrand href="/">
+            <img src={logo} alt="Logo" height="50" />
+          </CNavbarBrand>
+          <CNavbarToggler onClick={() => setVisible(!visible)} />
+          <CCollapse className="navbar-collapse" visible={visible}>
+            <CNavbarNav className="ms-auto">
+              <CNavItem>
+                <CNavLink href="/" active>
+                  Home
+                </CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="/projects">Projects</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="/aboutus">About Us</CNavLink>
+              </CNavItem>
+              <CNavItem>
+                <CNavLink href="/contactus">Contact Us</CNavLink>
+              </CNavItem>
+            </CNavbarNav>
+          </CCollapse>
+        </CContainer>
+      </CNavbar>
+    </>
   );
 };
 
-export default navigationBar;
+
+export default NavigationBar;
+
