@@ -1,31 +1,135 @@
-
-.custom-navbar, .custom-container, .navbar, .navbar-collapse, .navbar-brand, .navbar-toggler-icon {
+/* General Navbar Styles */
+.custom-navbar {
   background-color: #ffffff !important;
   color: #000000 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 15px; /* Reduced padding for smaller screens */
+  transition: all 0.3s ease-in-out;
 }
 
-.custom-navbar .CNavLink, 
-.custom-navbar .CNavItem,
-.custom-navbar .CContainer,
-.custom-navbar .CNavbarBrand{
-  background-color: #ffffff !important;
+.toolbar {
+  padding: 0 !important;
+}
+
+
+/* Navbar Brand */
+.custom-navbar .CNavbarBrand img {
+  height: 40px; /* Reduced logo size for smaller screens */
+  transition: transform 0.3s ease;
+}
+
+.custom-navbar .CNavbarBrand img:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar Links */
+.custom-navbar .CNavLink {
   color: #000000 !important;
+  font-size: 14px; /* Reduced font size for smaller screens */
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.custom-navbar .dropdown-toggle, 
-.custom-navbar .dropdown-menu, 
-.custom-navbar .dropdown-item,
-.custom-navbar .nav-link {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
-.custom-navbar .form-control, .custom-navbar .btn-outline-success {
-  color: #000000 !important;
-  background-color: #ffffff !important;
-}
-
-.custom-navbar .CNavLink:hover, .custom-navbar .dropdown-item:hover {
+.custom-navbar .CNavLink:hover {
   color: #007bff !important;
-  background-color: #eaeaea !important; 
+  background-color: #eaeaea !important;
 }
+
+/* Toggler Icon */
+.custom-navbar .navbar-toggler-icon {
+  color: #000000 !important;
+  font-size: 16px; /* Adjusted icon size */
+}
+
+/* Collapsible Navbar */
+.custom-navbar .navbar-collapse {
+  background-color: #ffffff !important;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+/* Dropdown Menu */
+.custom-navbar .dropdown-menu {
+  background-color: #ffffff !important;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+@media (max-device-width: 768px) and (min-resolution: 2dppx) {
+  .custom-navbar .CNavbarBrand img {
+    height: 30px !important; /* Adjust logo size */
+  }
+}
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 4px 8px; /* Reduced padding for smaller screens */
+  }
+
+  .custom-navbar .CNavLink {
+    font-size: 12px; /* Further reduce font size */
+    padding: 6px 8px;
+  }
+
+  .custom-navbar .CNavbarBrand img {
+    height: 35px; /* Adjust logo size */
+  }
+}
+
+@media (max-width: 412px) {
+  .custom-navbar {
+    padding: 0px 0px !important; /* Reduce padding further */
+  }
+  .custom-navbar .CNavLink {
+    font-size: 11px !important; /* Reduce text size */
+    padding: 0 !important; /* Remove padding around links */
+    margin: 0 !important;
+  }
+  .contact-us-btn {
+    font-size: 12px !important; /* Reduce font size */
+    padding: 5px 10px !important; /* Reduce button padding */
+    min-width: auto !important; /* Allow dynamic width */
+  }
+  .toolbar {
+    display: flex !important;
+    gap: 0 !important; /* Ensure no spacing */
+  }
+
+  .toolbar li {
+    display: inline-flex !important;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+  .custom-navbar {
+    padding: 5px 8px; /* Minimal padding for very small screens */
+  }
+
+  .custom-navbar .CNavbarBrand img {
+    height: 60px; /* Smaller logo for narrow screens */
+  }
+
+  .custom-navbar .CNavLink {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+
+  .custom-navbar .navbar-collapse {
+    padding: 5px;
+  }
+
+  .custom-navbar .navbar-toggler-icon {
+    font-size: 14px; /* Smaller toggler icon */
+  }
+
+}
+
+
