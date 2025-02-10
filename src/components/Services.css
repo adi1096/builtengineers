@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   background-color: black;
   color: white;
@@ -9,35 +10,55 @@ body {
 .services-page h1 {
   text-align: center;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
-.container2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  gap: 20px; /* Space between columns */
-  padding: 20px;
+.services-page {
+  padding-top: 80px;
+  scroll-margin-top: 80px; /* Ensure there's enough space at the top for the heading */
+  height: auto;
+  min-height: 100vh; /* Ensure the page takes up the full height of the screen */
 }
 
+/* Grid Layout for Services */
+.services-page .container2 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 20px !important;
+  padding: 20px !important;
+  align-items: stretch; /* Ensure items stretch to fit their container */
+}
+
+/* Column Styles */
 .column {
-  display: flex;
-  flex-direction: column; /* Stack service boxes within each column */
-  gap: 20px; /* Space between service boxes */
+  padding: 0; /* Padding is unnecessary with grid layout */
+  display: flex; /* Ensures the column behaves as a flex container */
+  flex-direction: column; /* Stacks service boxes vertically */
+  height: auto; /* Allow column height to adapt to content */
+  min-height: 0; /* Ensure no minimum height is forced */
+  overflow: visible; /* Prevent content from being clipped */
 }
 
+/* Service Box Styles */
 .service-box {
   background-color: transparent;
   border: 2px solid white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  height: 100%; /* Ensures all service boxes in the same column match height */
+  margin-bottom: 20px; /* Ensures all service boxes in the same column match height */
+  flex-grow: 1;
+}
+
+.services-page .service-box { /* Target only service boxes in the Services page */
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Let the height adjust based on content */
 }
 
 .service-box h3 {
   font-size: 22px;
   color: white;
-  margin-bottom: 10px;
 }
 
 .service-box p {
@@ -47,10 +68,33 @@ body {
 }
 
 p {
-  margin-bottom: 20px;
   font-size: 18px;
 }
 
-h3 {
-  margin-bottom: 10px;
+/* Responsive Adjustments for Tablet and Mobile Screens */
+@media (max-width: 768px) {
+  .services-page h1 {
+    font-size: 26px; /* Slightly smaller heading for tablets and phones */
+  }
+
+  .services-page {
+    padding-top: 100px; /* Increase padding to ensure heading isn't cut off */
+  }
+
+  .services-page .container2 {
+    grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+    padding: 0px; /* Reduce padding */
+  }
+
+  .service-box {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .service-box h3 {
+    font-size: 20px; /* Slightly smaller font size */
+  }
+
+  .service-box p {
+    font-size: 16px;
+  }
 }
