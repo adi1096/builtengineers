@@ -14,7 +14,7 @@ const NavigationBar = () => {
       <CNavbar expand="lg" className={`${styles.navbar} custom-navbar`}>
         <CContainer fluid className="custom-container">
           <CNavbarBrand href="/">
-            <img src={logo} alt="Logo" height="50" />
+            <img src={logo} alt="Logo" />
           </CNavbarBrand>
           <CNavbarToggler onClick={() => setVisible(!visible)} />
           <CCollapse className="navbar-collapse" visible={visible}>
@@ -31,7 +31,7 @@ const NavigationBar = () => {
                 <CNavLink href="/aboutus">About Us</CNavLink>
               </CNavItem>
               <CNavItem>
-                <CNavLink href="/contactus">Contact Us</CNavLink>
+                <CNavLink href="/contactus" className="contact-us-btn">Contact Us</CNavLink>
               </CNavItem>
             </CNavbarNav>
           </CCollapse>
