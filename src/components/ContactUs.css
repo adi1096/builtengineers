@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   background-color: black;
   color: white;
@@ -20,8 +21,12 @@ h1 {
   padding: 20px;
 }
 
-.column {
+.contactUs .column {
   padding: 10px;
+}
+
+.contactUs .column:first-child {
+    max-height: 80%;
 }
 
 .contact-box {
@@ -45,6 +50,72 @@ h1 {
   line-height: 1.6;
 }
 
-img {
-  margin-bottom: 10px;
+
+/* Responsive Adjustments */
+
+/* For Tablets and Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px; /* Slightly smaller heading */
+  }
+
+  .container2 {
+    grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    gap: 15px; /* Smaller gap between columns */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .contact-box {
+    padding: 15px; /* Reduce padding inside contact boxes */
+  }
+
+  .contact-box h3 {
+    font-size: 20px; /* Slightly smaller font size for headings */
+  }
+
+  .contact-box p {
+    font-size: 16px; /* Smaller text size for paragraphs */
+  }
+
+  .custom-navbar .CNavbarBrand img {
+    height: 40px; /* Reduced logo size for smaller screens */
+    width: auto; /* Ensure logo maintains aspect ratio */
+  }
+
+  img {
+    height: 50px; /* Maintain aspect ratio */
+  }
+}
+
+/* For Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px; /* Smaller heading for mobile screens */
+  }
+
+  .container2 {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 10px; /* Smaller gap between columns */
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .contact-box {
+    padding: 10px; /* Further reduce padding inside contact boxes */
+    border-radius: 5px; /* Smaller border radius for mobile */
+  }
+
+  .contact-box h3 {
+    font-size: 18px; /* Smaller heading for mobile */
+  }
+
+  .contact-box p {
+    font-size: 14px; /* Smaller paragraph text for mobile */
+  }
+
+  img {
+    width: auto; /* Maintain original aspect ratio */
+    height: 50px; /* Limit height */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+  }
+
 }
