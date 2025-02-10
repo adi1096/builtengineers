@@ -5,6 +5,9 @@ body {
 
 .App {
   text-align: center;
+  width: 100vw !important; /* Full viewport width */
+  max-width: 100% !important; /* Prevent accidental shrinking */
+  overflow-x: hidden;
 }
 
 .toolbar {
@@ -32,6 +35,13 @@ body {
   font-size: 18px;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 412px) {
+  .toolbar li {
+    margin: 0 5px;
+    font-size: 14px;
+  }
 }
 
 .toolbar a {
