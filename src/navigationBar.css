@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 10px 15px; /* Reduced padding for smaller screens */
+  padding: 10px 10px; /* Reduced padding for smaller screens */
   transition: all 0.3s ease-in-out;
 }
 
@@ -69,16 +69,21 @@
 /* Responsive Styles for Small Screens */
 @media (max-width: 768px) {
   .custom-navbar {
-    padding: 4px 8px; /* Reduced padding for smaller screens */
+    padding: 0px 0px !important; /* Reduced padding for smaller screens */
   }
 
   .custom-navbar .CNavLink {
     font-size: 12px; /* Further reduce font size */
-    padding: 6px 8px;
+    padding: 0px 0px;
   }
 
   .custom-navbar .CNavbarBrand img {
     height: 35px; /* Adjust logo size */
+  }
+
+  .toolbar li {
+    display: inline-flex !important;
+    padding: 0px 0px;
   }
 }
 
@@ -133,3 +138,17 @@
 }
 
 
+@media (max-width: 414px) {
+  .custom-navbar .CNavLink {
+    font-size: 10px !important; /* Reduce font size for small screens */
+    padding: 4px 0px !important; /* Reduce padding */
+  }
+  
+  .toolbar {
+    gap: 2px !important; /* Reduce spacing between nav items */
+  }
+
+  .toolbar li {
+    margin: 0 0px;
+  }
+}
