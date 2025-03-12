@@ -31,7 +31,7 @@ body {
 }
 
 .toolbar li {
-  margin: 0 15px;
+  margin: 0 10px;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -72,4 +72,15 @@ body {
 .contact-section {
   background: black;
   color: white;
+}
+
+/* Fix for scroll offset under fixed navbar */
+.section {
+  scroll-margin-top: 80px; /* Adjust this value to match your navbar height */
+}
+
+@media (max-width: 768px) {
+  .section {
+    scroll-margin-top: 60px; /* Smaller navbar height on mobile */
+  }
 }
