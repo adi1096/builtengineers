@@ -14,8 +14,8 @@ body {
 }
 
 .services-page {
-  padding-top: 80px;
-  scroll-margin-top: 80px; /* Ensure there's enough space at the top for the heading */
+  padding-top: 180px;
+  scroll-margin-top: 180px; /* Ensure there's enough space at the top for the heading */
   height: auto;
   min-height: 100vh; /* Ensure the page takes up the full height of the screen */
 }
@@ -78,7 +78,10 @@ p {
   }
 
   .services-page {
-    padding-top: 100px; /* Increase padding to ensure heading isn't cut off */
+    padding-top: 150px;
+    scroll-margin-top: 150px; /* Ensure there's enough space at the top for the heading */
+    height: auto;
+    min-height: 100vh; /* Ensure the page takes up the full height of the screen */
   }
 
   .services-page .container2 {
@@ -96,5 +99,21 @@ p {
 
   .service-box p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 740px) {
+  .services-page {
+    padding-top: 300px !important; /* Increase padding to ensure heading is visible */
+    scroll-margin-top: 200px !important; /* Adjust scroll margin to align properly */
+  }
+
+
+}
+
+@media (max-width: 540px) and (max-height: 720px) {
+  .services-page {
+    padding-top: 300px !important; /* Increase padding to ensure heading is visible */
+    scroll-margin-top: 100px !important; /* Adjust scroll margin to align properly */
   }
 }
