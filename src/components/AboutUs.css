@@ -115,3 +115,17 @@ h3 {
     font-size: 14px; /* Smaller paragraph text for mobile */
   }
 }
+
+@media (max-width: 360px) and (max-height: 740px) {
+  .aboutus-page {
+    padding-top: 100px !important; /* Increase padding to ensure heading is visible */
+    scroll-margin-top: 100px !important; /* Adjust scroll margin to align properly */
+  }
+}
+
+@media (max-width: 540px) and (max-height: 720px) {
+  .aboutus-page {
+    padding-top: 100px !important; /* Increase padding to ensure heading is visible */
+    scroll-margin-top: 100px !important; /* Adjust scroll margin to align properly */
+  }
+}
