@@ -9,24 +9,24 @@ const Services = () => {
         {/* Left Column */}
         <div className="column">
           <div className="service-box">
-            <h3>1. Feasibility Studies</h3>
-            <p>Evaluate the viability of your project, considering factors like site conditions, regulations, and costs.</p>
+            <h3>Feasibility Studies &amp; Concept Design</h3>
+            <p>We assess your project's viability by considering key factors such as material selection, site conditions, and compliance with Australian Standards—all while ensuring alignment with your budget.</p>
           </div>
           <div className="service-box">
-            <h3>2. Detailed Design</h3>
-            <p>Develop comprehensive structural plans, including drawings, specifications, and calculations.</p>
+            <h3>Detailed Design &amp; Documentation for CC</h3>
+            <p>We provide comprehensive structural plans, sketches, specifications, and calculations, delivering precise documentation to support the approval process and lead into the construction stage.</p>
           </div>
         </div>
 
         {/* Right Column */}
         <div className="column">
           <div className="service-box">
-            <h3>3. Construction Supervision</h3>
-            <p>Monitor the construction process to ensure adherence to design specifications and building codes.</p>
+            <h3>Construction Services</h3>
+            <p>We conduct HOLD POINT inspections throughout construction and provide the necessary certifications to ensure compliance and quality assurance.</p>
           </div>
           <div className="service-box">
-            <h3>4. Project Management</h3>
-            <p>Coordinate all aspects of the project, from planning to completion, ensuring efficient execution and budget management.</p>
+            <h3>Project Management</h3>
+            <p>We oversee all aspects of your project, from initial planning to completion, ensuring seamless coordination, timely execution, and effective budget management.</p>
           </div>
         </div>
       </div>
