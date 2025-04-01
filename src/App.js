@@ -5,7 +5,7 @@ import logo from './logo_bw.png';
 import HomePage from './components/HomePage.js'
 import Services from './components/Services.js'
 import AboutUs from './components/AboutUs.js'
-import ContactUs from './components/ContactUs.js'
+import Enquiry from './components/Enquiry.js'
 
 const App = () => {
   return (
@@ -32,7 +32,7 @@ const App = () => {
             </li>
 
             <li>
-              <Link to="contact" smooth={true} duration={500}>
+              <Link to="enquiry" smooth={true} duration={500}>
                 Contact Us
               </Link>
             </li>
@@ -52,8 +52,8 @@ const App = () => {
           <AboutUs />
         </Element>
 
-        <Element name="contact" className="section contact-section">
-          <ContactUs />
+        <Element name="enquiry" className="section enquiry-section">
+          <Enquiry />
         </Element>
       </div>
     </>
