@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd46d49c.css",
-    "main.js": "/static/js/main.03f3cad8.js",
-    "static/js/787.0c01a964.chunk.js": "/static/js/787.0c01a964.chunk.js",
-    "static/media/homepage_2.jpeg": "/static/media/homepage_2.dc6074e4a75c11ddaf9a.jpeg",
-    "static/media/logo_bw.png": "/static/media/logo_bw.d45562687196b2c2ba2f.png",
-    "index.html": "/index.html",
-    "main.fd46d49c.css.map": "/static/css/main.fd46d49c.css.map",
-    "main.03f3cad8.js.map": "/static/js/main.03f3cad8.js.map",
-    "787.0c01a964.chunk.js.map": "/static/js/787.0c01a964.chunk.js.map"
+    "main.css": "/builtengineers/static/css/main.398446f2.css",
+    "main.js": "/builtengineers/static/js/main.4da23fca.js",
+    "static/js/787.0c01a964.chunk.js": "/builtengineers/static/js/787.0c01a964.chunk.js",
+    "static/media/testvid.mp4": "/builtengineers/static/media/testvid.20d08ae5f6d7a30ac236.mp4",
+    "static/media/logo_bw.png": "/builtengineers/static/media/logo_bw.d45562687196b2c2ba2f.png",
+    "index.html": "/builtengineers/index.html",
+    "main.398446f2.css.map": "/builtengineers/static/css/main.398446f2.css.map",
+    "main.4da23fca.js.map": "/builtengineers/static/js/main.4da23fca.js.map",
+    "787.0c01a964.chunk.js.map": "/builtengineers/static/js/787.0c01a964.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd46d49c.css",
-    "static/js/main.03f3cad8.js"
+    "static/css/main.398446f2.css",
+    "static/js/main.4da23fca.js"
   ]
 }
