@@ -9,21 +9,21 @@ const AboutUs = () => {
         <div className="column">
           <div className="service-box">
             <h3>Experience</h3>
-            <p>Our team brings years of experience to every project, ensuring the highest standards of engineering expertise.</p>
+            <p>With over 20 years of combined experience, our team brings a wealth of knowledge and expertise to every project, ensuring outstanding engineering solutions.</p>
           </div>
         </div>
 
         <div className="column">
           <div className="service-box">
             <h3>Innovation</h3>
-            <p>We embrace cutting-edge technologies and methodologies, constantly seeking to optimize designs and enhance structural integrity.</p>
+            <p>We leverage industry-endorsed softwares and advanced methodologies to optimise designs, enhance structural performance, and deliver efficient solutions.</p>
           </div>
         </div>
 
         <div className="column">
           <div className="service-box">
             <h3>Collaboration</h3>
-            <p>We value open communication and collaboration with clients and partners, fostering a shared vision for successful projects.</p>
+            <p>We believe in open communication and strong collaboration with clients, architects, builders, and consultants, fostering a shared vision to achieve successful project outcomes.</p>
           </div>
         </div>
       </div>
