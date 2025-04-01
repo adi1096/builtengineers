@@ -1,0 +1,55 @@
+.enquiry-container {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.enquiry-container h1, 
+.enquiry-container h3, 
+.enquiry-container p {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.enquiry-form input, 
+.enquiry-form textarea {
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 350px;
+}
+
+.enquiry-form button {
+  padding: 10px;
+  cursor: pointer;
+  width: 90%;
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .enquiry-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .enquiry-form input, 
+  .enquiry-form textarea {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .enquiry-form button {
+    width: 100%;
+    max-width: 180px;
+  }
+}
